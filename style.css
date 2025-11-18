@@ -66,4 +66,16 @@ main {
     left: 0;
     height: 80px;
     background-color: brown;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-sx {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.nav-bar-sx-img {
+    max-width: 50px;
 }
