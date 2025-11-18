@@ -6,12 +6,20 @@
     font-family: "Montserrat", sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
 a {
     text-decoration: none;
 }
 
-.icon {
-    color: black;
+li {
+    list-style-type: NONE;
+}
+
+.icon1 {
+    fill: rgb(214, 40, 40);
+    stroke: red;
 }
 
 /* sezione contenuto principale */
@@ -48,26 +56,62 @@ main {
 .profile-area-spacing {
     border: 1px solid rgb(190, 168, 168);
 }
+
+
 /* sezione upgrade */
 .upgrade {
     height: 10vh;
     background-color: rgb(221, 255, 127);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.effettua-upgrade {
+    border: 1px solid gray;
+    padding: 10px 25px;
+    border-radius: 30px;
 }
 /* sezione da mettere in trasparenza (upgrade) */
 .sidebar-dx {
     background-color: red;
-    flex-grow: 1;
+    width: 100%;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+}
+
+.categories a {
+    padding: 10px;
+
+}
+
+.image-container {
+    display: flex;
+    gap: 10px;
+    padding: 40px 15px;
+}
+
+.image-item {
+    width: calc((100% / 6))
+}
+
+.align-center {
+    text-align: center;
 }
 /* postazione controlli su varia musica */
 .nav-bar {
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: 0; inutile */
     height: 80px;
     background-color: brown;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-bar-sx {
