@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.sidebar-sx {
+    background-color: blue;
+    width: 150px;
+}
+
+.upgrade {
+    height: 5vh;
+    background-color: rgb(221, 255, 127);
+}
+
+.sidebar-dx {
+    background-color: red;
+    flex-grow: 1;
+}
+
+.nav-bar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    background-color: brown;
+}
