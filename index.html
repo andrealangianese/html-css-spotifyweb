@@ -10,7 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link class="icon1" {style} rel="icon" href="./img/logo-small.svg">
+    <link rel="icon" href="./img/logo-small.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -19,8 +20,7 @@
         <!-- sidebar di sinistra -->
         <div class="sidebar-sx">
             <div class="container-sidebar-sx">
-                <div><img src="./img/logo.svg" alt="logo Spotify"></div>
-
+                <a href="#"><img src="./img/logo.svg" alt="logo Spotify"></a>
                 <ul>
                     <li>
                         <a href="#">
@@ -34,36 +34,41 @@
                     </li>
                     <li>
                         <a href="#">
-                            <div class="sidebar-icon-sx"><img src="./img/libreria.svg" alt="logo library">La tua
-                                libreria</div>
+                            <div class="sidebar-icon-sx"><img src="./img/libreria.svg" alt="logo library">La tua libreria 
+                            </div>
                         </a>
                     </li>
                 </ul>
-                <h3>PLAYLIST</h3>
-                <h5>Crea Playlist</h5>
-                <ul>
-                    <li>
-                        <a href="#">Nome Playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome Playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome Playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome Playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome Playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome Playlist</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome Playlist</a>
-                    </li>
-                </ul>
+                <div class="playlist-section">
+                    <h3>PLAYLIST</h3>
+                    <a href="#"> <i class="fa-solid fa-plus"></i>
+                        <span>Crea Playlist</span>
+                    </a>
+                    <ul>
+                        <li class="padding-playlist">
+                            <a  href="#">Nome Playlist</a>
+                        </li>
+                        <li class="padding-playlist">
+                            <a  href="#">Nome Playlist</a>
+                        </li>
+                        <li class="padding-playlist">
+                            <a  href="#">Nome Playlist</a>
+                        </li>
+                        <li class="padding-playlist">
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li class="padding-playlist">
+                            <a  href="#">Nome Playlist</a>
+                        </li>
+                        <li class="padding-playlist">
+                            <a  href="#">Nome Playlist</a>
+                        </li>
+                        <li class="padding-playlist">
+                            <a  href="#">Nome Playlist</a>
+                        </li>
+
+                    </ul>
+                </div>
                 <div class="profile-area">
                     <a href="#">Installa app</a>
                     <div class="profile-area-spacing"></div>
@@ -90,63 +95,69 @@
                 </ul>
             </div>
             <!-- prima sezione di canzoni -->
-            <h3><strong>RECENTLY PLAYED</strong></h3>
+            <div class="categories-description">
+                <h3><strong>RECENTLY PLAYED</strong></h3>
+            </div>
             <div class="image-container">
                 <div class="image-item">
                     <img src="./img/metal_lifting.jpg" alt="metal album">
                     <div class="align-center"><strong>HEAVY METAL</strong></div>
-                    <div class="align-center">subtitle</div>
+                    <div class="align-center image-item-gray">subtitle</div>
                 </div>
                 <div class="image-item">
                     <img src="./img/stranger.jpeg" alt="stranger things album">
                     <div class="align-center"><strong>Stranger Things,Vol.1 (a Netflix Original Series Soundtrack)
                         </strong></div>
-                    <div class="align-center">Kyle Irving e Lebron James</div>
+                    <div class="align-center image-item-gray">Kyrie Irving e Lebron James</div>
                 </div>
                 <div class="image-item">
                     <img src="./img/aquietplace.jpeg" alt=" a quiet place album">
                     <div class="align-center"><strong>A quiet place</strong></div>
-                    <div class="align-center">subtitle</div>
+                    <div class="align-center image-item-gray">subtitle</div>
                 </div>
                 <div class="image-item">
                     <img src="./img/split.jpeg" alt="split album">
                     <div class="align-center"><strong>Split</strong></div>
-                    <div class="align-center">subtitle</div>
+                    <div class="align-center image-item-gray">subtitle</div>
                 </div>
                 <div class="image-item">
                     <img src="./img/cure.jpeg" alt="cure for wellness">
                     <div class="align-center"><strong>A cure for wellness </strong></div>
-                    <div class="align-center">subtitle</div>
+                    <div class="align-center image-item-gray">subtitle</div>
                 </div>
                 <div class="image-item">
                     <img src="./img/sinister.jpeg" alt="sinister album">
                     <div class="align-center"><strong>Sinister</strong></div>
-                    <div class="align-center">subtitle</div>
+                    <div class="align-center image-item-gray">subtitle</div>
                 </div>
             </div>
 
             <!-- creato per te  -->
-            <h3><strong>Creato per Andrea Langianese</strong></h3>
-            <div>Più ascolti, più accurati saranno i suggerimenti</div>
+            <div class="categories-description">
+                <h3><strong>Creato per Andrea Langianese</strong></h3>
+                <p class="image-item-gray">Più ascolti, più accurati saranno i suggerimenti</p>
+            </div>
             <div class="image-container">
                 <div class="image-item">
                     <img src="./img/radar.jpeg" alt="playlist radar">
                     <div class="align-center"><strong>Release Radar </strong></div>
                 </div>
-                 <div class="image-item">
+                <div class="image-item">
                     <img src="./img/mixdaily.jpeg" alt="daily mix">
                     <div class="align-center"><strong>Daily Mix</strong></div>
                 </div>
             </div>
             <!-- ascolti più popolari -->
-             <h3><strong>Artisti più popolari</strong></h3>
-            <div>Più ascolti, più accurati saranno i suggerimenti</div>
+            <div class="categories-description">
+                <h3><strong>Artisti più popolari</strong></h3>
+                <p class="image-item-gray">Più ascolti, più accurati saranno i suggerimenti</p>
+            </div>
             <div class="image-container">
                 <div class="image-item">
                     <img class="img-tonda" src="./img/youg.jpeg" alt="lana del rey">
                     <div class="align-center"><strong>Lana del rey </strong></div>
                 </div>
-                 <div class="image-item">
+                <div class="image-item">
                     <img class="img-tonda" src="./img/einaudi.jpeg" alt="Ludovico einaudi">
                     <div class="align-center"><strong>Ludovico einaudi</strong></div>
                 </div>
@@ -161,22 +172,31 @@
                 <img class="nav-bar-sx-img" src="./img/sinister.jpeg" alt="foto albun sinister">
             </div>
             <div class="nav-bar-sx-description">
-                Sinister <br>Brano Nome
+               <span><strong> Sinister </strong></span>
+               <div>Brano Nome</div>
             </div>
             <div class="nav-bar-sx-icon">
-
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-regular fa-folder"></i></a>
             </div>
         </div>
         <div class="nav-bar-center">
             <div class="nav-bar-center-icon">
-
+                <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
             </div>
             <div class="nav-bar-center-time">
-                time
+                <input type="range">
             </div>
         </div>
         <div class="nav-bar-dx">
-            icone
+            <a href="#"><i class="fa-solid fa-list"></i></a>
+            <a href="#"><i class="fa-solid fa-tv"></i></a>
+            <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+            <input type="range">
         </div>
     </section>
 </body>
