@@ -9,6 +9,11 @@
 img {
     max-width: 100%;
 }
+
+.img-tonda {
+    border-radius: 50%;
+}
+
 a {
     text-decoration: none;
 }
@@ -28,25 +33,24 @@ main {
     /* height: calc(100vh - 80px); */
     height: 100vh;
 }
+
 /* sidebar di sinistra */
 .sidebar-sx {
     background-color: rgb(0, 255, 72);
     width: 200px;
     padding-left: 10px;
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    bottom: 80px; */
+    bottom: 80px;
 }
 
-.container-sidebar-sx {
-
-}
+.container-sidebar-sx {}
 
 .sidebar-icon-sx {
     max-width: 30px;
     display: flex;
-    align-items: center;  
-    gap: 8px;  
+    align-items: center;
+    gap: 8px;
 }
 
 /* profilo */
@@ -79,10 +83,13 @@ main {
     padding: 10px 25px;
     border-radius: 30px;
 }
+
 /* sezione da mettere in trasparenza (upgrade) */
 .sidebar-dx {
     background-color: red;
-    width: calc(100% - 200px)
+    /* width: calc(100% - 200px); */
+    overflow: scroll;
+    padding-left: 200px;
 }
 
 .categories {
@@ -109,6 +116,7 @@ main {
 .align-center {
     text-align: center;
 }
+
 /* postazione controlli su varia musica */
 .nav-bar {
     /* position: fixed;
