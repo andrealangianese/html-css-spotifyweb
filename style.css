@@ -25,14 +25,17 @@ li {
 /* sezione contenuto principale */
 main {
     display: flex;
+    /* height: calc(100vh - 80px); */
     height: 100vh;
-    height: calc(100vh - 80px);
 }
 /* sidebar di sinistra */
 .sidebar-sx {
     background-color: rgb(0, 255, 72);
     width: 200px;
     padding-left: 10px;
+    /* position: fixed;
+    top: 0;
+    bottom: 80px; */
 }
 
 .container-sidebar-sx {
@@ -65,6 +68,10 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 200px;
 }
 
 .effettua-upgrade {
@@ -75,12 +82,13 @@ main {
 /* sezione da mettere in trasparenza (upgrade) */
 .sidebar-dx {
     background-color: red;
-    width: 100%;
+    width: calc(100% - 200px)
 }
 
 .categories {
     display: flex;
     justify-content: center;
+    margin-top: 10vh;
 }
 
 .categories a {
