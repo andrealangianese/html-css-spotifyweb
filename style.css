@@ -53,7 +53,7 @@ main {
 
 .container-sidebar-sx {
     padding: 10px;
-    height: calc(100% - 65px );
+    height: calc(100% - 65px);
     overflow: auto;
 }
 
@@ -92,6 +92,25 @@ main {
     margin-bottom: 15px;
 }
 
+.profile-logo {
+    display: flex;
+    align-items: center;
+}
+
+.download-logo span {
+    max-width: 10px;
+    margin-right: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+.profile-logo img {
+    max-width: 17px;
+    margin-right: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+}
 
 /* sezione upgrade */
 .upgrade {
@@ -110,6 +129,12 @@ main {
     border: 1px solid rgb(244, 239, 239);
     padding: 10px 25px;
     border-radius: 30px;
+}
+
+.upgrade :hover {
+    background-color: rgb(23, 71, 71);
+    transform: translateY(-5px);
+    transform: scale(1.2);
 }
 
 .effettua-upgrade strong {
@@ -132,6 +157,11 @@ main {
     margin-top: 10vh;
     padding-top: 20px;
     padding-bottom: 40px;
+}
+
+.categories a:hover {
+    border-bottom: 1px solid yellow;
+    color: blueviolet;
 }
 
 .categories a {
@@ -162,8 +192,40 @@ main {
     color: lightgray;
 }
 
+.image-item :hover {
+    filter: brightness(0.7);
+    cursor: pointer;
+}
+
 .align-center {
     text-align: center;
+    color: white;
+}
+
+.player {
+    position: relative;
+    display: inline-block;
+}
+
+/* .player img {
+    position: relative;
+} */
+
+.play-icon {
+    color: fuchsia;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    display: none;
+}
+
+.player:hover .play-icon {
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* postazione controlli su varia musica */
@@ -192,6 +254,10 @@ main {
 .nav-bar-center-time {
     display: flex;
     justify-content: center;
+}
+
+.nav-bar-center-icon:hover{
+    transform: scale(1.2);
 }
 
 .nav-bar-description {
@@ -224,13 +290,13 @@ main {
         margin: 13px;
     }
 
-    .image-container{ 
+    .image-container {
         flex-wrap: wrap;
         gap: 4px;
     }
 
     .image-item {
-        width: calc((100% / 4) - (10px /3)) 
+        width: calc((100% / 4) - 4px);
         /* width: 25%; */
     }
 }
@@ -239,7 +305,7 @@ main {
 
 @media screen and (max-width:750px) {
     .image-item {
-        width: calc((100% / 2) - (4px / 2));
+        width: calc((100% / 2) - (8px / 2));
         padding: 4px;
     }
 }
@@ -250,8 +316,21 @@ main {
     .sidebar-sx {
         width: 50px;
     }
-    
-    .sidebar-sx div {
+
+    .container-sidebar-sx {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .playlist-section {
+        display: none;
+    }
+
+    .profile-logo span {
+        display: none;
+    }
+
+    .display-no {
         display: none;
     }
 
@@ -266,8 +345,12 @@ main {
     .categories li {
         /* margin: 5px; */
     }
-    
+
     .nav-bar-center-icon a {
         padding: 0;
+    }
+
+    .profile-logo img {
+        display: block;
     }
 }
