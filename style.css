@@ -41,9 +41,9 @@ main {
     background-color: rgb(0, 0, 0);
     width: 200px;
     padding-left: 10px;
-    position: fixed;
-    top: 0;
-    bottom: 80px;
+    /* position: fixed; */
+    /* top: 0;
+    bottom: 80px; */
     color: lightgrey
 }
 
@@ -53,10 +53,13 @@ main {
 
 .container-sidebar-sx {
     padding: 10px;
+    height: calc(100% - 65px );
+    overflow: auto;
 }
 
 .padding-playlist {
     padding-top: 10px;
+    max-width: calc(100vh - 50px);
 }
 
 .sidebar-icon-sx {
@@ -66,8 +69,8 @@ main {
     gap: 10px;
 }
 
-.playlist-section {
-
+.playlist-father {
+    max-height: 100vh;
 }
 
 .playlist-section h3 {
@@ -78,8 +81,9 @@ main {
 /* profilo */
 
 .profile-area {
-    position: fixed;
-    bottom: 90px;
+    /* position: fixed;
+    bottom: 90px; */
+    height: 65px;
 }
 
 .profile-area-spacing {
@@ -115,14 +119,15 @@ main {
 /* sezione da mettere in trasparenza (upgrade) */
 .sidebar-dx {
     background-color: #192025;
-    /* width: calc(100% - 200px); */
-    overflow: scroll;
-    padding-left: 200px;
+    width: calc(100% - 200px);
+    overflow: auto;
+    /* padding-left: 200px; */
     color: white;
 }
 
 .categories {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     margin-top: 10vh;
     padding-top: 20px;
@@ -206,4 +211,63 @@ main {
 
 .nav-bar-sx-description {
     margin: 0 30px 0 5px;
+}
+
+/* responsive desktop piccolo */
+
+@media screen and (max-width:950px) {
+    .categories {
+        flex-wrap: wrap;
+    }
+
+    .categories li {
+        margin: 13px;
+    }
+
+    .image-container{ 
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .image-item {
+        width: calc((100% / 4) - (10px /3)) 
+        /* width: 25%; */
+    }
+}
+
+/* responsive tablet */
+
+@media screen and (max-width:750px) {
+    .image-item {
+        width: calc((100% / 2) - (4px / 2));
+        padding: 4px;
+    }
+}
+
+/* responsive mobile */
+
+@media screen and (max-width:480px) {
+    .sidebar-sx {
+        width: 50px;
+    }
+    
+    .sidebar-sx div {
+        display: none;
+    }
+
+    .sidebar-dx {
+        width: calc(100% - 50px);
+    }
+
+    .upgrade {
+        left: 50px;
+    }
+
+    .categories li {
+        /* margin: 5px; */
+    }
+    
+    .nav-bar-center-icon a {
+        padding: 0;
+    }
 }
