@@ -114,31 +114,43 @@ main {
 
 /* sezione upgrade */
 .upgrade {
-    height: 10vh;
+    height: 80px;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: fixed;
+    z-index: 50;
     top: 0;
     right: 0;
     left: 200px;
+    padding: 10px 20px;
+    backdrop-filter: blur(16px);
 }
 
 .effettua-upgrade {
     border: 1px solid rgb(244, 239, 239);
+    background-color: rgb(23, 71, 71);
+    color: white;
     padding: 10px 25px;
     border-radius: 30px;
-}
-
-.upgrade :hover {
-    background-color: rgb(23, 71, 71);
-    transform: translateY(-5px);
-    transform: scale(1.2);
+    transition: all 300ms ease-out;
 }
 
 .effettua-upgrade strong {
     color: white;
+    transition: all 300ms ease-out;
+}
+
+.effettua-upgrade:hover strong {
+    color: rgb(23, 71, 71);
+}
+
+.upgrade .effettua-upgrade:hover {
+    background-color: white;
+    color: rgb(23, 71, 71); 
+    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
 /* sezione da mettere in trasparenza (upgrade) */
@@ -154,14 +166,19 @@ main {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 80px;
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
-.categories a:hover {
-    border-bottom: 1px solid yellow;
-    color: blueviolet;
+.categories li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categories li:hover div {
+    opacity: 1;
+    transition: all 300ms ease-in-out;
 }
 
 .categories a {
@@ -176,6 +193,13 @@ main {
 
 .categories-description p {
     padding-top: 15px;
+}
+
+.underline {
+    width: 40%;
+    height: 1px;
+    background-color: blue;
+    opacity: 0;
 }
 
 .image-container {
